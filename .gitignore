@@ -5,3 +5,7 @@
 
 # codewiki local state
 docs.prev-*/
+
+# local generation state
+.prev-docs/
+.tiktoken-cache/

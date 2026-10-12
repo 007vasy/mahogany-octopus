@@ -1,0 +1,141 @@
+name: weekly-docs
+
+on:
+  schedule:
+    - cron: "0 4 * * 1" # Mondays 04:00 UTC
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: weekly-docs
+  cancel-in-progress: false
+
+env:
+  MERMAID_VALIDATE: "0" # never send diagram content to the mermaid.ink service
+  CODEWIKI_NO_KEYRING: "1" # headless runner: file-based key storage (ephemeral)
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout (with submodules)
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          submodules: recursive
+          fetch-depth: 1
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Cache tiktoken encodings (avoid runtime fetch)
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: .tiktoken-cache
+          key: tiktoken-${{ runner.os }}
+
+      - name: Install gitleaks (pinned, checksum-verified)
+        run: |
+          set -euo pipefail
+          ver="8.30.1"
+          base="https://github.com/gitleaks/gitleaks/releases/download/v${ver}"
+          curl -fsSL -o /tmp/gitleaks.tar.gz "${base}/gitleaks_${ver}_linux_x64.tar.gz"
+          curl -fsSL -o /tmp/gitleaks.sums   "${base}/gitleaks_${ver}_checksums.txt"
+          grep "gitleaks_${ver}_linux_x64.tar.gz$" /tmp/gitleaks.sums \
+            | awk '{print $1 "  /tmp/gitleaks.tar.gz"}' > /tmp/gitleaks.check
+          sha256sum -c /tmp/gitleaks.check
+          tar -xzf /tmp/gitleaks.tar.gz -C /usr/local/bin gitleaks
+          gitleaks version
+
+      - name: Triple-check every submodule is a public repo
+        run: ./scripts/check-repos.sh
+
+      - name: Secrets scan (fail closed on new findings)
+        run: |
+          gitleaks detect --source . --no-git --no-banner --redact \
+            --report-format json --report-path /tmp/leaks.json || {
+              echo "::error::gitleaks findings — triage before the LLM run"
+              exit 1
+            }
+
+      - name: Install the patched CodeWiki fork (pinned tag)
+        run: |
+          pip install --upgrade pip
+          pip install "codewiki @ git+https://github.com/007vasy/CodeWiki.git@v2.0.0-cre-demo.2"
+
+      - name: Bump submodules to tracked branch tips
+        run: |
+          git config user.name "codewiki-bot"
+          git config user.email "codewiki-bot@users.noreply.github.com"
+          git submodule update --remote
+          git add .gitmodules chainlink chainlink-common capabilities crec-sdk \
+            cre-sdk-typescript cre-cli crec-api-go
+          git diff --cached --quiet || git commit -m "submodules: bump to latest tracked branch tips"
+
+      - name: Snapshot previous generation artifacts
+        run: |
+          if [ -d docs/temp/dependency_graphs ] || [ -f docs/module_tree.json ]; then
+            mkdir -p .prev-docs/temp
+            cp -r docs/temp/dependency_graphs .prev-docs/temp/ 2>/dev/null || true
+            cp docs/module_tree.json .prev-docs/ 2>/dev/null || true
+          fi
+
+      - name: Generate / update documentation
+        env:
+          TIKTOKEN_CACHE_DIR: ${{ github.workspace }}/.tiktoken-cache
+        run: |
+          codewiki config set \
+            --provider openai-compatible \
+            --api-key "${{ secrets.FIREWORKS_API_KEY }}" \
+            --base-url https://api.fireworks.ai/inference/v1 \
+            --main-model accounts/fireworks/models/glm-5p3-flash \
+            --cluster-model accounts/fireworks/models/glm-5p3-flash \
+            --fallback-model accounts/fireworks/models/glm-5p3-flash
+          if [ -f .prev-docs/module_tree.json ]; then
+            codewiki generate --github-pages --with-prose --update
+          else
+            codewiki generate --github-pages --with-prose
+          fi
+
+      - name: Render the delta report
+        run: |
+          if [ -d .prev-docs ]; then
+            python3 scripts/render_delta.py --prev .prev-docs --docs docs
+          else
+            python3 scripts/render_delta.py --prev docs-nonexistent --docs docs
+          fi
+
+      - name: Open a pull request with the delta
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="codewiki/refresh-$(date -u +%Y-%m-%d)"
+          git checkout -b "$branch"
+          git add docs .gitmodules chainlink chainlink-common capabilities crec-sdk \
+            cre-sdk-typescript cre-cli crec-api-go
+          if git diff --cached --quiet; then
+            echo "Nothing changed; no PR needed."
+            exit 0
+          fi
+          git commit -m "docs: weekly refresh + delta report ($(date -u +%Y-%m-%d))"
+          git push origin "$branch"
+          summary=$(python3 - <<'EOF'
+          from pathlib import Path
+          text = Path("docs/DELTA.md").read_text(encoding="utf-8") if Path("docs/DELTA.md").exists() else "initial generation"
+          lines = [l for l in text.splitlines() if l.startswith("| Components")]
+          print(lines[0] if lines else "initial generation")
+          EOF
+          )
+          gh pr create --base main --head "$branch" \
+            --title "docs: weekly refresh ($(date -u +%Y-%m-%d))" \
+            --body "$summary
+
+          Full report: \`docs/DELTA.md\`. Generated with CodeWiki (patched fork) on Fireworks glm-5p3-flash." \
+            --label documentation
