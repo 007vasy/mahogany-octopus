@@ -1,0 +1,7 @@
+# local secrets never leave this machine
+.env
+.env.*
+*.env
+
+# codewiki local state
+docs.prev-*/

@@ -1,0 +1,28 @@
+[submodule "crec-api-go"]
+	path = crec-api-go
+	url = https://github.com/smartcontractkit/crec-api-go.git
+	branch = main
+[submodule "crec-sdk"]
+	path = crec-sdk
+	url = https://github.com/smartcontractkit/crec-sdk.git
+	branch = main
+[submodule "cre-cli"]
+	path = cre-cli
+	url = https://github.com/smartcontractkit/cre-cli.git
+	branch = main
+[submodule "cre-sdk-typescript"]
+	path = cre-sdk-typescript
+	url = https://github.com/smartcontractkit/cre-sdk-typescript.git
+	branch = main
+[submodule "chainlink-common"]
+	path = chainlink-common
+	url = https://github.com/smartcontractkit/chainlink-common.git
+	branch = main
+[submodule "capabilities"]
+	path = capabilities
+	url = https://github.com/smartcontractkit/capabilities.git
+	branch = main
+[submodule "chainlink"]
+	path = chainlink
+	url = https://github.com/smartcontractkit/chainlink.git
+	branch = develop
