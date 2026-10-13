@@ -1,0 +1,1539 @@
+{
+    "token_budget": 200000,
+    "tokens_used": 198668,
+    "caps": {
+        "per_file_bytes": 16384,
+        "per_class_files": 40,
+        "per_file_units": 25
+    },
+    "with_prose": true,
+    "classes": {
+        "manifest": {
+            "files": [
+                {
+                    "path": "capabilities/go.mod",
+                    "bytes": 558,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/nx.json",
+                    "bytes": 1085,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/package.json",
+                    "bytes": 671,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "ci:changeset:publish",
+                        "ci:changeset:version"
+                    ]
+                },
+                {
+                    "path": "capabilities/pnpm-workspace.yaml",
+                    "bytes": 21,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/go.mod",
+                    "bytes": 7779,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/go.mod",
+                    "bytes": 22605,
+                    "truncated": true,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/package.json",
+                    "bytes": 1017,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "ci:changeset:version"
+                    ]
+                },
+                {
+                    "path": "cre-cli/go.mod",
+                    "bytes": 24897,
+                    "truncated": true,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "cre-cli/package.json",
+                    "bytes": 305,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "ci:changeset:publish",
+                        "ci:changeset:version"
+                    ]
+                },
+                {
+                    "path": "cre-sdk-typescript/package.json",
+                    "bytes": 616,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "build",
+                        "check",
+                        "check:ci",
+                        "format",
+                        "full-checks",
+                        "lint",
+                        "test:templates",
+                        "typecheck"
+                    ]
+                },
+                {
+                    "path": "cre-sdk-typescript/turbo.json",
+                    "bytes": 455,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "crec-api-go/go.mod",
+                    "bytes": 2641,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "crec-sdk/go.mod",
+                    "bytes": 10753,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/consensus/go.mod",
+                    "bytes": 6824,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/cron/go.mod",
+                    "bytes": 7099,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/http_action/go.mod",
+                    "bytes": 6932,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/http_trigger/go.mod",
+                    "bytes": 7094,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/integration_tests/go.mod",
+                    "bytes": 24037,
+                    "truncated": true,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/libs/go.mod",
+                    "bytes": 6666,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/keystore/go.mod",
+                    "bytes": 14176,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/observability-lib/go.mod",
+                    "bytes": 776,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/deployment/go.mod",
+                    "bytes": 33179,
+                    "truncated": true,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/devenv/go.mod",
+                    "bytes": 25349,
+                    "truncated": true,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/integration-tests/go.mod",
+                    "bytes": 33250,
+                    "truncated": true,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/chain_capabilities/aptos/go.mod",
+                    "bytes": 7617,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/chain_capabilities/common/go.mod",
+                    "bytes": 5017,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/chain_capabilities/evm/go.mod",
+                    "bytes": 11938,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/chain_capabilities/solana/go.mod",
+                    "bytes": 11367,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/chain_capabilities/stellar/go.mod",
+                    "bytes": 7143,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/chipingress/go.mod",
+                    "bytes": 1596,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/monitoring/go.mod",
+                    "bytes": 5729,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/values/go.mod",
+                    "bytes": 74,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/x/config/go.mod",
+                    "bytes": 1077,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/core/scripts/go.mod",
+                    "bytes": 41499,
+                    "truncated": true,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/devenv/fakes/go.mod",
+                    "bytes": 7422,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/integration-tests/load/go.mod",
+                    "bytes": 40486,
+                    "truncated": true,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/system-tests/lib/go.mod",
+                    "bytes": 38483,
+                    "truncated": true,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/tools/ci/go.mod",
+                    "bytes": 374,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/tools/githooks/go.mod",
+                    "bytes": 479,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "cre-sdk-typescript/packages/cre-http-trigger/package.json",
+                    "bytes": 754,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "check",
+                        "check:ci",
+                        "format",
+                        "full-checks",
+                        "lint",
+                        "start",
+                        "typecheck"
+                    ]
+                }
+            ],
+            "omitted_by_class_cap": [
+                "cre-sdk-typescript/packages/cre-http-trigger/tsconfig.json",
+                "cre-sdk-typescript/packages/cre-rust-inject-alpha/Cargo.toml",
+                "cre-sdk-typescript/packages/cre-rust-inject-alpha/package.json",
+                "cre-sdk-typescript/packages/cre-rust-inject-alpha/tsconfig.json",
+                "cre-sdk-typescript/packages/cre-rust-inject-beta/Cargo.toml",
+                "cre-sdk-typescript/packages/cre-rust-inject-beta/package.json",
+                "cre-sdk-typescript/packages/cre-rust-inject-beta/tsconfig.json",
+                "cre-sdk-typescript/packages/cre-rust-prebuilt-plugin-example/package.json",
+                "cre-sdk-typescript/packages/cre-rust-prebuilt-plugin-example/tsconfig.json",
+                "cre-sdk-typescript/packages/cre-rust-source-extensions-example/package.json",
+                "cre-sdk-typescript/packages/cre-rust-source-extensions-example/tsconfig.json",
+                "cre-sdk-typescript/packages/cre-sdk-examples/package.json",
+                "cre-sdk-typescript/packages/cre-sdk-examples/tsconfig.json",
+                "cre-sdk-typescript/packages/cre-sdk-javy-plugin/package.json",
+                "cre-sdk-typescript/packages/cre-sdk-javy-plugin/tsconfig.json",
+                "cre-sdk-typescript/packages/cre-sdk/package.json",
+                "cre-sdk-typescript/packages/cre-sdk/tsconfig.build.json",
+                "cre-sdk-typescript/packages/cre-sdk/tsconfig.json",
+                "chainlink/core/scripts/cre/environment/package.json",
+                "cre-sdk-typescript/packages/cre-sdk-javy-plugin/src/cre_wasm_exports/Cargo.toml",
+                "cre-sdk-typescript/packages/cre-sdk-javy-plugin/src/javy_chainlink_sdk/Cargo.toml",
+                "chainlink-common/pkg/workflows/sdk/v2/pb/go.mod",
+                "cre-cli/internal/templaterepo/builtin/hello-world-ts/workflow/package.json",
+                "cre-cli/internal/templaterepo/builtin/hello-world-ts/workflow/tsconfig.json"
+            ],
+            "not_loaded_budget": []
+        },
+        "build": {
+            "files": [
+                {
+                    "path": "capabilities/Makefile",
+                    "bytes": 1521,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "generate",
+                        "gomods",
+                        "gomodtidy",
+                        "help",
+                        "mockery",
+                        "modgraph",
+                        "protoc",
+                        "tidy",
+                        "update-chain-capabilities"
+                    ]
+                },
+                {
+                    "path": "chainlink-common/Makefile",
+                    "bytes": 2204,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "cre-protoc",
+                        "dependabot",
+                        "docs",
+                        "generate",
+                        "gomods",
+                        "gomodtidy",
+                        "install-protoc",
+                        "lint",
+                        "lint-workspace",
+                        "mockery",
+                        "modgraph",
+                        "release-modules",
+                        "rm-mocked"
+                    ]
+                },
+                {
+                    "path": "chainlink/GNUmakefile",
+                    "bytes": 14946,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "chainlink",
+                        "chainlink-dev",
+                        "chainlink-test",
+                        "docker",
+                        "docker-ccip",
+                        "docker-plugins",
+                        "docs",
+                        "generate",
+                        "gomod",
+                        "gomodtidy",
+                        "install",
+                        "install-chainlink",
+                        "install-chainlink-autoinstall",
+                        "install-chainlink-cover",
+                        "install-chainlink-dev",
+                        "install-git-hooks",
+                        "install-loopinstall",
+                        "install-plugins",
+                        "install-plugins-local",
+                        "install-plugins-private",
+                        "install-plugins-public",
+                        "install-plugins-testing",
+                        "operator-ui",
+                        "test",
+                        "tidy"
+                    ]
+                },
+                {
+                    "path": "cre-cli/Makefile",
+                    "bytes": 1971,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "all",
+                        "build",
+                        "clean",
+                        "gendoc",
+                        "goreleaser-dev-build",
+                        "install-foundry",
+                        "install-tools",
+                        "lint",
+                        "run",
+                        "run-op",
+                        "test",
+                        "test-e2e",
+                        "test-quick"
+                    ]
+                },
+                {
+                    "path": "crec-sdk/Makefile",
+                    "bytes": 950,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "coverage",
+                        "coverage-report",
+                        "docs",
+                        "generate",
+                        "test",
+                        "tools",
+                        "vendor"
+                    ]
+                },
+                {
+                    "path": "chainlink-common/observability-lib/Makefile",
+                    "bytes": 233,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "build",
+                        "lint",
+                        "run",
+                        "test",
+                        "update"
+                    ]
+                },
+                {
+                    "path": "chainlink/integration-tests/Makefile",
+                    "bytes": 4208,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "build",
+                        "build_docker_image",
+                        "build_push_docker_image",
+                        "check_github_token",
+                        "install_gotestloghelper",
+                        "install_qa_tools",
+                        "lint",
+                        "push-ccip-test-image",
+                        "remove_test_execution_artefacts",
+                        "run_tracing"
+                    ]
+                },
+                {
+                    "path": "cre-sdk-typescript/packages/cre-rust-inject-alpha/Makefile",
+                    "bytes": 402,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "build",
+                        "clean",
+                        "dist/alpha.plugin.wasm"
+                    ]
+                },
+                {
+                    "path": "cre-sdk-typescript/packages/cre-rust-prebuilt-plugin-example/Makefile",
+                    "bytes": 561,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "build",
+                        "clean"
+                    ]
+                },
+                {
+                    "path": "cre-sdk-typescript/packages/cre-rust-source-extensions-example/Makefile",
+                    "bytes": 473,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "build",
+                        "clean"
+                    ]
+                },
+                {
+                    "path": "cre-sdk-typescript/packages/cre-sdk/Makefile",
+                    "bytes": 1189,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "standard_test_single",
+                        "standard_tests"
+                    ]
+                },
+                {
+                    "path": "chainlink/core/scripts/ccip/revert-reason/Makefile",
+                    "bytes": 68,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "build"
+                    ]
+                },
+                {
+                    "path": "chainlink/core/scripts/cre/environment/GNUmakefile",
+                    "bytes": 521,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "install"
+                    ]
+                },
+                {
+                    "path": "cre-sdk-typescript/packages/cre-sdk/src/standard_tests/Makefile",
+                    "bytes": 628,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "FORCE"
+                    ]
+                },
+                {
+                    "path": "chainlink-common/pkg/workflows/wasm/host/regression_tests/Makefile",
+                    "bytes": 526,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "FORCE"
+                    ]
+                },
+                {
+                    "path": "chainlink-common/pkg/workflows/wasm/host/standard_tests/Makefile",
+                    "bytes": 217,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "FORCE"
+                    ]
+                }
+            ],
+            "omitted_by_class_cap": [],
+            "not_loaded_budget": []
+        },
+        "container": {
+            "files": [
+                {
+                    "path": "chainlink-common/ops/monitoring/docker-compose.yml",
+                    "bytes": 1522,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "kafka",
+                        "schema-registry",
+                        "zookeeper"
+                    ]
+                },
+                {
+                    "path": "chainlink/devenv/fakes/Dockerfile",
+                    "bytes": 549,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "builder",
+                        "stage_1"
+                    ]
+                },
+                {
+                    "path": "chainlink/tools/docker/docker-compose.dev.yaml",
+                    "bytes": 322,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "node"
+                    ]
+                },
+                {
+                    "path": "chainlink/tools/docker/docker-compose.gethnet.local.yaml",
+                    "bytes": 343,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "devnet",
+                        "node",
+                        "node-2"
+                    ]
+                },
+                {
+                    "path": "chainlink/tools/docker/docker-compose.gethnet.yaml",
+                    "bytes": 333,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "devnet",
+                        "node",
+                        "node-2"
+                    ]
+                },
+                {
+                    "path": "chainlink/tools/docker/docker-compose.observability.yaml",
+                    "bytes": 1175,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "alertmanager",
+                        "grafana",
+                        "prometheus"
+                    ]
+                },
+                {
+                    "path": "chainlink/tools/docker/docker-compose.paritynet.local.yaml",
+                    "bytes": 482,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "devnet",
+                        "node",
+                        "node-2"
+                    ]
+                },
+                {
+                    "path": "chainlink/tools/docker/docker-compose.paritynet.yaml",
+                    "bytes": 472,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "devnet",
+                        "node",
+                        "node-2"
+                    ]
+                },
+                {
+                    "path": "chainlink/tools/docker/docker-compose.postgres.yaml",
+                    "bytes": 967,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "node",
+                        "node-2",
+                        "node-db",
+                        "node-db-2"
+                    ]
+                },
+                {
+                    "path": "chainlink/tools/docker/docker-compose.yaml",
+                    "bytes": 1437,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "node",
+                        "node-2"
+                    ]
+                },
+                {
+                    "path": "chainlink/tools/gethnet-london/Dockerfile",
+                    "bytes": 978,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/tools/gethnet/Dockerfile",
+                    "bytes": 363,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "cre-sdk-typescript/packages/cre-sdk-javy-plugin/Dockerfile",
+                    "bytes": 2965,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "javy-cli",
+                        "plugin-builder",
+                        "stage_2"
+                    ]
+                },
+                {
+                    "path": "chainlink/core/scripts/common/vrf/docker/docker-compose.yml",
+                    "bytes": 4974,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "chainlink-node-0",
+                        "chainlink-node-1",
+                        "chainlink-node-2",
+                        "chainlink-node-3",
+                        "chainlink-node-4",
+                        "database"
+                    ]
+                }
+            ],
+            "omitted_by_class_cap": [],
+            "not_loaded_budget": []
+        },
+        "ci": {
+            "files": [
+                {
+                    "path": ".github/workflows/weekly-docs.yml",
+                    "bytes": 5495,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": [
+                        "refresh"
+                    ]
+                }
+            ],
+            "omitted_by_class_cap": [],
+            "not_loaded_budget": []
+        },
+        "schema": {
+            "files": [
+                {
+                    "path": "crec-api-go/api/openapi.yaml",
+                    "bytes": 130148,
+                    "truncated": true,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/libs/monitoring/execution_context.proto",
+                    "bytes": 919,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/keystore/serialization/keystore.proto",
+                    "bytes": 361,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/chain_capabilities/aptos/monitoring/view.proto",
+                    "bytes": 890,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/chain_capabilities/aptos/monitoring/write_report.proto",
+                    "bytes": 2229,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/chain_capabilities/evm/monitoring/log_trigger.proto",
+                    "bytes": 2019,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/chain_capabilities/evm/monitoring/read_actions.proto",
+                    "bytes": 4723,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/chain_capabilities/evm/monitoring/write_report.proto",
+                    "bytes": 2353,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/chain_capabilities/solana/monitoring/log_trigger.proto",
+                    "bytes": 1361,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/chain_capabilities/solana/monitoring/write_report.proto",
+                    "bytes": 2020,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/chain_capabilities/stellar/monitoring/read_contract.proto",
+                    "bytes": 1000,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/chain_capabilities/stellar/monitoring/write_report.proto",
+                    "bytes": 1705,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/consensus/oracle/types/value_consensus_types.proto",
+                    "bytes": 4113,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/libs/chainconsensus/types/ocr.proto",
+                    "bytes": 2417,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/beholder/pb/base_message.proto",
+                    "bytes": 888,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/beholder/pb/example.proto",
+                    "bytes": 271,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/capabilities/pb/capabilities.proto",
+                    "bytes": 5644,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/capabilities/pb/registry.proto",
+                    "bytes": 4189,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/capabilities/pb/triggers.proto",
+                    "bytes": 616,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/chains/aptos/aptos.proto",
+                    "bytes": 4029,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/chains/evm/evm.proto",
+                    "bytes": 14954,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/chains/solana/solana.proto",
+                    "bytes": 17178,
+                    "truncated": true,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/chains/stellar/stellar.proto",
+                    "bytes": 9883,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/chains/ton/ton.proto",
+                    "bytes": 2799,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/chipingress/pb/chip_common.proto",
+                    "bytes": 1624,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/chipingress/pb/chip_ingress.proto",
+                    "bytes": 4689,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/internal/codec/codec.proto",
+                    "bytes": 874,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/loop/chain-common/query.proto",
+                    "bytes": 2395,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/metering/pb/metering.proto",
+                    "bytes": 410,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/metering/pb/meteringdetail.proto",
+                    "bytes": 575,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/metering/pb/meteringstep.proto",
+                    "bytes": 417,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/monitoring/pb/offchainreporting2_monitoring_median_config.proto",
+                    "bytes": 272,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/monitoring/pb/offchainreporting2_monitoring_offchain_config.proto",
+                    "bytes": 944,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/core/web/schema/schema.graphql",
+                    "bytes": 3742,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/capabilities/actions/vault/messages.proto",
+                    "bytes": 7673,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/loop/internal/pb/contract_reader.proto",
+                    "bytes": 5431,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/loop/internal/pb/contract_writer.proto",
+                    "bytes": 1785,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/loop/internal/pb/event_store.proto",
+                    "bytes": 1376,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/loop/internal/pb/keystore.proto",
+                    "bytes": 735,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/pkg/loop/internal/pb/keyvalue_store.proto",
+                    "bytes": 800,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                }
+            ],
+            "omitted_by_class_cap": [
+                "chainlink-common/pkg/loop/internal/pb/median.proto",
+                "chainlink-common/pkg/loop/internal/pb/median_datasource.proto",
+                "chainlink-common/pkg/loop/internal/pb/orgresolver.proto",
+                "chainlink-common/pkg/loop/internal/pb/pipeline_runner.proto",
+                "chainlink-common/pkg/loop/internal/pb/relayer.proto",
+                "chainlink-common/pkg/loop/internal/pb/reporting.proto",
+                "chainlink-common/pkg/loop/internal/pb/reporting_plugin_service.proto",
+                "chainlink-common/pkg/loop/internal/pb/telemetry.proto",
+                "chainlink-common/pkg/loop/internal/pb/validate_config.proto",
+                "chainlink-common/pkg/workflows/dontime/pb/config.proto",
+                "chainlink-common/pkg/workflows/dontime/pb/dontime.proto",
+                "chainlink-common/pkg/workflows/events/pb/metadata.proto",
+                "chainlink/core/capabilities/remote/types/messages.proto",
+                "chainlink/core/services/llo/telem/telem_streams.proto",
+                "chainlink/core/services/synchronization/telem/telem.proto",
+                "chainlink/core/services/synchronization/telem/telem_enhanced_ea.proto",
+                "chainlink/core/services/synchronization/telem/telem_enhanced_ea_mercury.proto",
+                "chainlink/core/services/synchronization/telem/telem_functions_request.proto",
+                "chainlink/core/services/synchronization/telem/telem_head_report.proto",
+                "chainlink/core/web/schema/type/api_token.graphql",
+                "chainlink/core/web/schema/type/aptos_key.graphql",
+                "chainlink/core/web/schema/type/bridge.graphql",
+                "chainlink/core/web/schema/type/chain.graphql",
+                "chainlink/core/web/schema/type/configv2.graphql",
+                "chainlink/core/web/schema/type/csa_keys.graphql",
+                "chainlink/core/web/schema/type/error.graphql",
+                "chainlink/core/web/schema/type/eth_key.graphql",
+                "chainlink/core/web/schema/type/eth_transaction.graphql",
+                "chainlink/core/web/schema/type/eth_transaction_attempt.graphql",
+                "chainlink/core/web/schema/type/features.graphql",
+                "chainlink/core/web/schema/type/feeds_manager.graphql",
+                "chainlink/core/web/schema/type/job.graphql",
+                "chainlink/core/web/schema/type/job_error.graphql",
+                "chainlink/core/web/schema/type/job_proposal.graphql",
+                "chainlink/core/web/schema/type/job_proposal_spec.graphql",
+                "chainlink/core/web/schema/type/job_run.graphql",
+                "chainlink/core/web/schema/type/log.graphql",
+                "chainlink/core/web/schema/type/node.graphql",
+                "chainlink/core/web/schema/type/ocr.graphql",
+                "chainlink/core/web/schema/type/ocr2_keys.graphql",
+                "chainlink/core/web/schema/type/p2p.graphql",
+                "chainlink/core/web/schema/type/pagination.graphql",
+                "chainlink/core/web/schema/type/solana_key.graphql",
+                "chainlink/core/web/schema/type/spec.graphql",
+                "chainlink/core/web/schema/type/starknet_key.graphql",
+                "chainlink/core/web/schema/type/stellar_key.graphql",
+                "chainlink/core/web/schema/type/sui_key.graphql",
+                "chainlink/core/web/schema/type/task_run.go.graphql",
+                "chainlink/core/web/schema/type/ton_key.graphql",
+                "chainlink/core/web/schema/type/tron_key.graphql"
+            ],
+            "not_loaded_budget": []
+        },
+        "config": {
+            "files": [
+                {
+                    "path": "capabilities/.golangci.yml",
+                    "bytes": 7222,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/sonar-project.properties",
+                    "bytes": 1203,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/.mockery.yaml",
+                    "bytes": 1958,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/sonar-project.properties",
+                    "bytes": 853,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/.golangci.yml",
+                    "bytes": 10279,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/.mockery.yaml",
+                    "bytes": 7903,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/_typos.toml",
+                    "bytes": 4167,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/lefthook.yml",
+                    "bytes": 5357,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/nix.conf",
+                    "bytes": 43,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/sonar-project.properties",
+                    "bytes": 2083,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "cre-cli/.golangci.yml",
+                    "bytes": 2631,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "cre-cli/.goreleaser.yml",
+                    "bytes": 690,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "cre-sdk-typescript/bunfig.toml",
+                    "bytes": 321,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "crec-api-go/.vacuum.yaml",
+                    "bytes": 700,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "crec-api-go/Taskfile.yaml",
+                    "bytes": 738,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "crec-sdk/Taskfile.yaml",
+                    "bytes": 3625,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                }
+            ],
+            "omitted_by_class_cap": [],
+            "not_loaded_budget": []
+        },
+        "script": {
+            "files": [
+                {
+                    "path": "chainlink/nix-darwin-shell-hook.sh",
+                    "bytes": 1063,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "crec-sdk/test-vault-transit.sh",
+                    "bytes": 572,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "scripts/check-repos.sh",
+                    "bytes": 1294,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "scripts/run-codewiki.sh",
+                    "bytes": 816,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "scripts/update-submodules.sh",
+                    "bytes": 460,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/script/install-protoc.sh",
+                    "bytes": 1071,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "capabilities/script/update-chain-capabilities.sh",
+                    "bytes": 1172,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/script/generate.sh",
+                    "bytes": 109,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/script/go-modules.sh",
+                    "bytes": 1372,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/script/install-protoc.sh",
+                    "bytes": 1153,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/script/lint.sh",
+                    "bytes": 2410,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/script/release-modules.sh",
+                    "bytes": 614,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink-common/script/wasmtime-bump.sh",
+                    "bytes": 1045,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "chainlink/operator_ui/check.sh",
+                    "bytes": 1194,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "cre-cli/install/check_embedded_key.sh",
+                    "bytes": 810,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "cre-cli/install/install.ps1",
+                    "bytes": 10516,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "cre-cli/install/install.sh",
+                    "bytes": 17493,
+                    "truncated": true,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "cre-cli/install/linux_asset_suffix_test.sh",
+                    "bytes": 2015,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "cre-cli/install/tag_parse_test.sh",
+                    "bytes": 2000,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "cre-cli/scripts/tag-and-push.sh",
+                    "bytes": 797,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "cre-sdk-typescript/scripts/full-checks.sh",
+                    "bytes": 1322,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "cre-sdk-typescript/scripts/setup-cre-cli.sh",
+                    "bytes": 1591,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "cre-sdk-typescript/scripts/test-templates.sh",
+                    "bytes": 11336,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                }
+            ],
+            "omitted_by_class_cap": [],
+            "not_loaded_budget": []
+        },
+        "prose": {
+            "files": [
+                {
+                    "path": "README.md",
+                    "bytes": 1481,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "docs/Build,_CI___Release_Infrastructure.md",
+                    "bytes": 5977,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "docs/CCIP_Cross-Chain_Protocol.md",
+                    "bytes": 3360,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "docs/CCIP_Deployment_Suite.md",
+                    "bytes": 4409,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "docs/CRE___Keystone_Deployment_Suite.md",
+                    "bytes": 5865,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "docs/Deployment_Framework_Core___Product_Deployments.md",
+                    "bytes": 5082,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "docs/Dev,_Test___Simulation_Environments.md",
+                    "bytes": 6273,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "docs/Developer_Toolchain_(CLI,_SDKs___API_Clients).md",
+                    "bytes": 9664,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "docs/Node_Application_Core___Interfaces.md",
+                    "bytes": 5777,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "docs/Node_Platform_Services.md",
+                    "bytes": 6028,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "docs/Oracle_Engines___Data_Pipelines.md",
+                    "bytes": 75,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                },
+                {
+                    "path": "docs/Plugin_Process_Framework_(Loop).md",
+                    "bytes": 5330,
+                    "truncated": false,
+                    "loaded": true,
+                    "units": []
+                }
+            ],
+            "omitted_by_class_cap": [
+                "docs/Deployment_Framework_Core___Product_Deployments/tokens.md",
+                "docs/Deployment_Framework_Core___Product_Deployments/vault.md",
+                "docs/Dev,_Test___Simulation_Environments/capabilities_integration_tests.md",
+                "docs/Dev,_Test___Simulation_Environments/chainlink-node-web-sdk.md",
+                "docs/Dev,_Test___Simulation_Environments/deployment-environment.md",
+                "docs/Dev,_Test___Simulation_Environments/devenv.md",
+                "docs/Dev,_Test___Simulation_Environments/docker-dev-environments.md",
+                "docs/Dev,_Test___Simulation_Environments/integration-tests.md",
+                "docs/Dev,_Test___Simulation_Environments/operations_scripts.md",
+                "docs/Dev,_Test___Simulation_Environments/system-tests.md",
+                "docs/Developer_Toolchain_(CLI,_SDKs___API_Clients)/cre-cli-backend-clients.md",
+                "docs/Developer_Toolchain_(CLI,_SDKs___API_Clients)/cre-cli-bindings-generator.md",
+                "docs/Developer_Toolchain_(CLI,_SDKs___API_Clients)/cre-cli-build-and-release.md",
+                "docs/Developer_Toolchain_(CLI,_SDKs___API_Clients)/cre-cli-platform-config.md",
+                "docs/Developer_Toolchain_(CLI,_SDKs___API_Clients)/cre-cli-secrets.md",
+                "docs/Developer_Toolchain_(CLI,_SDKs___API_Clients)/cre-cli-workflow-commands.md",
+                "docs/Developer_Toolchain_(CLI,_SDKs___API_Clients)/cre-sdk-core.md",
+                "docs/Developer_Toolchain_(CLI,_SDKs___API_Clients)/cre-sdk-examples-and-plugins.md",
+                "docs/Developer_Toolchain_(CLI,_SDKs___API_Clients)/cre-sdk-generated-capabilities.md",
+                "docs/Developer_Toolchain_(CLI,_SDKs___API_Clients)/cre-sdk-workspace-build.md",
+                "docs/Developer_Toolchain_(CLI,_SDKs___API_Clients)/crec-api-go-openapi.md",
+                "docs/Developer_Toolchain_(CLI,_SDKs___API_Clients)/crec-go-sdk.md",
+                "docs/Node_Application_Core___Interfaces/bridges.md",
+                "docs/Node_Application_Core___Interfaces/cli_commands.md",
+                "docs/Node_Application_Core___Interfaces/core_config.md",
+                "docs/Node_Application_Core___Interfaces/core_shared_utilities.md",
+                "docs/Node_Application_Core___Interfaces/node_application.md",
+                "docs/Node_Application_Core___Interfaces/sessions_auth.md",
+                "docs/Node_Application_Core___Interfaces/web_api.md",
+                "docs/Node_Platform_Services/database_persistence.md",
+                "docs/Node_Platform_Services/feeds_service.md",
+                "docs/Node_Platform_Services/gateway.md",
+                "docs/Node_Platform_Services/job_service.md",
+                "docs/Node_Platform_Services/keystore.md",
+                "docs/Node_Platform_Services/node_status_reporter.md",
+                "docs/Node_Platform_Services/p2p.md",
+                "docs/Node_Platform_Services/registry_syncer.md",
+                "docs/Oracle_Engines___Data_Pipelines/llo.md",
+                "docs/Oracle_Engines___Data_Pipelines/ocr.md",
+                "docs/Oracle_Engines___Data_Pipelines/pipeline.md",
+                "docs/Oracle_Engines___Data_Pipelines/streams.md",
+                "docs/Oracle_Engines___Data_Pipelines/vrf.md",
+                "docs/Plugin_Process_Framework_(Loop)/loop-grpc-bindings.md",
+                "docs/Plugin_Process_Framework_(Loop)/loop-plugin-core.md",
+                "docs/Plugin_Process_Framework_(Loop)/loop-relayer-services.md",
+                "docs/Shared_Foundation_Libraries___Domain_Types/chain-grpc-protos.md",
+                "docs/Shared_Foundation_Libraries___Domain_Types/codec.md",
+                "docs/Shared_Foundation_Libraries___Domain_Types/config-validation.md",
+                "docs/Shared_Foundation_Libraries___Domain_Types/durable-emitter.md",
+                "docs/Shared_Foundation_Libraries___Domain_Types/http-client.md"
+            ],
+            "not_loaded_budget": [
+                "docs/Shared_Foundation_Libraries___Domain_Types.md",
+                "docs/Telemetry___Observability_Platform.md",
+                "docs/Workflow___Capability_Runtime_(CRE_Engine).md",
+                "docs/Build,_CI___Release_Infrastructure/build-and-repo-tooling.md",
+                "docs/Build,_CI___Release_Infrastructure/capabilities_workspace_tooling.md",
+                "docs/Build,_CI___Release_Infrastructure/chainlink_build_and_tooling.md",
+                "docs/Build,_CI___Release_Infrastructure/ci-tools.md",
+                "docs/Build,_CI___Release_Infrastructure/githooks.md",
+                "docs/Build,_CI___Release_Infrastructure/plugout.md",
+                "docs/Build,_CI___Release_Infrastructure/release-changelog.md",
+                "docs/Build,_CI___Release_Infrastructure/repo-build-config.md",
+                "docs/Build,_CI___Release_Infrastructure/repo-maintenance-scripts.md",
+                "docs/Build,_CI___Release_Infrastructure/repo_ci_and_docs.md",
+                "docs/CCIP_Cross-Chain_Protocol/ccip.md",
+                "docs/CCIP_Cross-Chain_Protocol/types-ccip.md",
+                "docs/CCIP_Deployment_Suite/ccip-changesets.md",
+                "docs/CCIP_Deployment_Suite/ccip-operations.md",
+                "docs/CCIP_Deployment_Suite/ccip-sequences.md",
+                "docs/CCIP_Deployment_Suite/ccip-shared.md",
+                "docs/CRE___Keystone_Deployment_Suite/cre-capabilities-registry.md",
+                "docs/CRE___Keystone_Deployment_Suite/cre-core.md",
+                "docs/CRE___Keystone_Deployment_Suite/cre-forwarder.md",
+                "docs/CRE___Keystone_Deployment_Suite/cre-jobs.md",
+                "docs/CRE___Keystone_Deployment_Suite/cre-ocr3.md",
+                "docs/CRE___Keystone_Deployment_Suite/cre-workflow-registry.md",
+                "docs/CRE___Keystone_Deployment_Suite/keystone.md",
+                "docs/Deployment_Framework_Core___Product_Deployments/data-feeds.md",
+                "docs/Deployment_Framework_Core___Product_Deployments/deployment-common.md"
+            ]
+        }
+    },
+    "nodes": 315,
+    "edges": 286
+}

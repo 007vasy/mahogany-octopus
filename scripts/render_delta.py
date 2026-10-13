@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import datetime
+import gzip
 import json
 from pathlib import Path
 
@@ -28,14 +29,22 @@ TYPE_TYPES = {"class", "interface", "struct"}
 
 
 def load_graphs(graph_dir: Path) -> dict[str, dict]:
-    """Merge every *_dependency_graph.json under *graph_dir* into one
-    id -> component map."""
+    """Merge every saved dependency graph (gz or plain) under *graph_dir*
+    into one id -> component map."""
     components: dict[str, dict] = {}
     if not graph_dir.is_dir():
         return components
-    for f in sorted(graph_dir.glob("*_dependency_graph.json")):
+    files = sorted(
+        list(graph_dir.glob("*_dependency_graph.json.gz"))
+        + list(graph_dir.glob("*_dependency_graph.json"))
+    )
+    for f in files:
         try:
-            data = json.loads(f.read_text(encoding="utf-8"))
+            if f.suffix == ".gz":
+                with gzip.open(f, "rt", encoding="utf-8") as fh:
+                    data = json.load(fh)
+            else:
+                data = json.loads(f.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
             continue
         if isinstance(data, dict):

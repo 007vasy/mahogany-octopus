@@ -68,7 +68,7 @@ jobs:
       - name: Install the patched CodeWiki fork (pinned tag)
         run: |
           pip install --upgrade pip
-          pip install "codewiki @ git+https://github.com/007vasy/CodeWiki.git@v2.0.0-cre-demo.5"
+          pip install "codewiki @ git+https://github.com/007vasy/CodeWiki.git@v2.0.0-cre-demo.6"
 
       - name: Bump submodules to tracked branch tips
         run: |

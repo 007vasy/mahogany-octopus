@@ -9,3 +9,6 @@ docs.prev-*/
 # local generation state
 .prev-docs/
 .tiktoken-cache/
+
+# only the gzipped graph is committable (plain json exceeds 100MB)
+docs/temp/dependency_graphs/*_dependency_graph.json
